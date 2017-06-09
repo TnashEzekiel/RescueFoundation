@@ -1,21 +1,8 @@
-___________GENERAL___________
+___________NAV BAR__________
+
 
 body {margin: 25px;}
 
-.logo {
-  font-size: 30px;
-  font-weight: 100;
-  letter-spacing: 0.4px;
-  line-height: 22px;
-  float:initial;
-  
-  }
-  
-.tagline {
-  margin: 66px 0 22px 0;
-  text-align: right;
-
-}
 
 ul.topnav {
     list-style-type: none;
@@ -25,6 +12,7 @@ ul.topnav {
     border: 1px solid #e7e7e7;
     background-color: #f3f3f3;
     text-transform: uppercase;
+    
 }
 
 ul.topnav li {float: left;}
@@ -43,6 +31,8 @@ ul.topnav li a.active {background-color: #4CAF50;}
 
 ul.topnav li.right {float: right;}
 
+ul.topnav li a.red {background-color: #4285F4}
+
 @media screen and (max-width: 600px){
     ul.topnav li.right, 
     ul.topnav li {float: none;}
@@ -51,6 +41,7 @@ ul.topnav li.right {float: right;}
 .container {
 color: green;
 }
+
 
 /**********FOOTER**********/
 
@@ -68,9 +59,106 @@ footer {
   margin: 0 5px;
 }
 
+___________________GENERAL BODY________________
+
+
+.MainNav {
+    float: left;
+    color: #C5E5C5;
+    padding: 8px;
+    color: #4CAF50;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .columns {
+        width: 100%;
+    }
+ 
+}
+
+
+h1, h2, {
+  padding-top: 1cm;
+  padding-bottom: 1cm;
+  font-family:'Lato', sans-serif;
+  font-size: 40px;
+   }
+
+p {
+font-family: 'Open Sans', sans-serif;
+font-size: 15px;
+text-align:center;
+line-height:25px;
+}
+
+___________________INDEX-HOME PAGE________________
+p {
+    padding-top: 5cm;
+}
+h3, h4 {
+  text-align:center;
+  padding-top: 1cm;
+  padding-bottom: 1cm;
+  padding-left: 3cm;
+  font-family:'Lato', sans-serif;
+  font-size: 40px;
+   }
+
+
+___________________WHAT WE DO PAGE________________
+
+
+h4 {
+  padding-top: 1cm;
+  padding-bottom: 1cm;
+  padding-left: 3cm;
+  font-family:'Lato', sans-serif;
+  font-size: 40px;
+   }
+
+.col {
+    float: left;
+    width: 33.3%;
+    padding: 8px;
+}
+
+.partners{
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+
+.partners .header {
+    background-color:white;
+    color: white;
+    font-size: 25px;
+}
+
+.partners li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+}
+
+.partners .grey {
+    background-color: #eee;
+    font-size: 20px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .columns {
+        width: 100%;
+    }
+ 
+}
 
 ___________________DONATE PAGE________________
-
 
 * {
     box-sizing: border-box;
@@ -78,7 +166,7 @@ ___________________DONATE PAGE________________
 
 .columns {
     float: left;
-    width: 25%;
+    width: 33.3%;
     padding: 8px;
 }
 
@@ -118,5 +206,219 @@ ___________________DONATE PAGE________________
         width: 100%;
     }
  
+}
+
+______________CONTACT PAGE_____________________
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+.C-columns {
+  max-width: 400px;
+    float: left;
+    width: 50%;
+    padding: 8px;
+}
+
+.Contacted {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.Contacted:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.Contacted .C-header {
+    background-color:white;
+    color: white;
+    font-size: 25px;
+}
+
+.Contacted li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+}
+
+.Contacted .C-grey {
+    background-color: #eee;
+    font-size: 20px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .C-columns {
+        width: 100%;
+    }
+ 
+}
+
+.Contacted-info a {
+  display: block;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 0 0 0 30px;
+  margin: 0 0 10px;
+}
+.Contacted-info li.phone a {
+  background-image: url('../img/call.png');
+}
+
+.Contacted-info li.mail a {
+  background-image: url('../img/email.png');
+}
+
+.Contacted-info li.twitter a {
+  background-image: url('../img/tweet.png');
+}
+
+.Contacted-info li.facebook a {
+  background-image: url('../img/FB.png');
+}
+
+/*+++++++CONTACT FORM+++++*/
+
+
+*
+ {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.CF-columns {
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+  float: left;
+  width: 50%;
+  padding: 8px;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact textarea,
+#contact button[type="submit"] {
+  font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+}
+
+#contact {
+  background: #eee;;
+  padding: 25px;
+  margin: 15px 0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#contact h3 {
+  display: block;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+#contact h4 {
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa;
+}
+
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+#contact button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #4CAF50;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+#contact button[type="submit"]:hover {
+  background: #43A047;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: 0;
+  border: 1px solid #4CAF50;
+}
+
+::-webkit-input-placeholder {
+  color: #888;
+}
+
+:-moz-placeholder {
+  color: #888;
+}
+
+::-moz-placeholder {
+  color: #888;
+}
+
+:-ms-input-placeholder {
+  color: #888;
 }
 

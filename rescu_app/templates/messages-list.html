@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/static/css/normalize.css">
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Open+Sans:300,400,700|Roboto:300,400,700" rel="stylesheet">
+<link rel="stylesheet" href="/static/css/main.css">
+</head>
+<body>
+
+<h1 class="logo">
+        <a href="index.html">Rescu Foundation:: Messages </a>
+      </h1>
+
+
+<h2 class="tagline"> <a href="Donate.html"> DONATE NOW</a></h2>
+
+
+<ul class="topnav">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="What We Do.html">What We Do</a></li>
+  <li><a href="Donate.html">Donate</a></li>
+  <li><a class="active" href="/contact-us">Contact Us</a></li>
+  <li><a class="active" href="contact-messages">Messages</a></li>
+</ul>
+
+<h4>CONTACT US Messages</h4>
+<p style="text-align:center">Any well wishers are welcome to visit the centre which is at 21 Harare Street, Harare, Zimbabwe.<br>You can get intouch with us through the below contact details<br></p>
+
+<div align='center'>
+  <table border=1 style="width: 80%" style="font-family: heveltica; font-size: 12px; font-color: gray; border-color: black; border-style: solid; margin-top: 15px; margin-bottom: 15px; " >
+      <thead>
+        <tr>
+          <th>Full Name</th>
+          <th>Phone Number</th>
+          <th>Email Address</th>
+          <th>Date Created</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        {% for message in messages: %}
+        <tr>
+          <td>{{ message[0] }}</td>
+          <td>{{ message[1] }}</td>
+          <td>{{ message[2] }}</td>
+          <td>{{ message[4] }}</td>
+        <tr>
+        {% endfor %}
+      </tbody>
+
+  </table>
+
+</div>
+
+
+      <footer>
+        <a href="http://twitter.com/"><img src="/static/img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
+        <a href="http://facebook.com/"><img src="/static/img/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
+        <p>&copy; 2017 RESCU FOUNDATION.</p>
+      </footer>
+</body>
+</html>
